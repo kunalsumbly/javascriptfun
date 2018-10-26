@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html>
+<head>
+<script>
+function setTextAreaValue(){
+/**
+TEST
+
+
+document.getElementById("textAreaSqlInput").value ="INFO  [20170420 13:19:36] - 76285 SofAncestorBo.getData: executing SELECT sysrepoperation0.sysrepoperation_id, sysrepoperation0.name, sysrepoperation0.description_mlid, sysrepoperation0.description, sysrepoperation0.defaultallowed, sysrepoperation0.classname, sysrepoperation0.type_enumid, sysrepoperation0.auditing, sysrepoperation0.changeable, sysrepoperation0.status_enumid, sysrepoperation0.since, sysrepoperation0.task, sysrepoperation0.history, sysrepoperation0.specific, sysrepoperation0.documentation, sysrepoperation0.accesstype_enumid, sysrepoperation0.auditdetail, sysrepoperation0.timestamp, sysrepoperation0.context_id	FROM sysrepoperation sysrepoperation0	WHERE sysrepoperation0.sysrepoperation_id = ? INFO  [20170420 13:19:36] - 76286 SofAncestorBo.getData: with args 1025";*/
+
+
+/*document.getElementById("textAreaSqlInput").value ="01025798 INFO  [20170504 15:24:06] - 46227 SofAncestorBo.getData: executing SELECT count(1) FROM (SELECT DISTINCT costallocation0.costallocation_id AS AA0	FROM costallocation costallocation0, allocateddocument allocateddocument0	WHERE allocateddocument0.allocateddocument_id = costallocation0.allocateddocument_id	AND ( costallocation0.generalledgeraccount_id IN (?, ?)	 AND costallocation0.startcostperiod <= ?	 AND allocateddocument0.posted = ?	 AND  NOT allocateddocument0.journaltype_enumid IN (?, ?)	 AND allocateddocument0.postdate <= ?	 AND (costallocation0.endcostperiod >= ?	 OR allocateddocument0.postdate >= ?)	 AND costallocation0.Lcompany_id = ? )) tmptable4count 01025798 INFO  [20170504 15:24:06] - 46228 SofAncestorBo.getData: with args 1000002, 1000001, 2018-05-31 00:00:00, 1, 1000006, 1000007, 2017-05-31 00:00:00, 2018-05-31 00:00:00, 2017-05-01 00:00:00, 1";*/
+
+document.getElementById("textAreaSqlInput").value = "INFO  [20170505 17:52:26] - 46833 SofAncestorBo.getData: executing SELECT dependency0.dependency_id, dependency0.predecessor_id, dependency0.successor_id, dependency0.unrequired, dependency0.lagtime, dependency0.lagtimeunit_enumid, dependency0.condition_id	FROM dependency dependency0	WHERE dependency0.predecessor_id IN (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)	UNION 	SELECT dependency0.dependency_id, dependency0.predecessor_id, dependency0.successor_id, dependency0.unrequired, dependency0.lagtime, dependency0.lagtimeunit_enumid, dependency0.condition_id	FROM dependency dependency0	WHERE dependency0.successor_id IN (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?) INFO  [20170505 17:52:26] - 46833 SofAncestorBo.getData: with args 1054825, 1054830, 1054820, 1054831, 1054824, 1054834, 1054833, 1054836, 1054835, 1054819, 1054822, 1054827, 1054826, 1054821, 1054832, 1054823, 1054828, 1054829, 1054825, 1054830, 1054820, 1054831, 1054824, 1054834, 1054833, 1054836, 1054835, 1054819, 1054822, 1054827, 1054826, 1054821, 1054832, 1054823, 1054828, 1054829";
+
+/**
+not working for this log
+ INFO  [20170505 17:52:26] - 46833 SofAncestorBo.getData: executing SELECT dependency0.dependency_id, dependency0.predecessor_id, dependency0.successor_id, dependency0.unrequired, dependency0.lagtime, dependency0.lagtimeunit_enumid, dependency0.condition_id
+	FROM dependency dependency0
+	WHERE dependency0.predecessor_id IN (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)
+	UNION 
+	SELECT dependency0.dependency_id, dependency0.predecessor_id, dependency0.successor_id, dependency0.unrequired, dependency0.lagtime, dependency0.lagtimeunit_enumid, dependency0.condition_id
+	FROM dependency dependency0
+	WHERE dependency0.successor_id IN (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)
+ INFO  [20170505 17:52:26] - 46833 SofAncestorBo.getData: with args 1054825, 1054830, 1054820, 1054831, 1054824, 1054834, 1054833, 1054836, 1054835, 1054819, 1054822, 1054827, 1054826, 1054821, 1054832, 1054823, 1054828, 1054829, 1054825, 1054830, 1054820, 1054831, 1054824, 1054834, 1054833, 1054836, 1054835, 1054819, 1054822, 1054827, 1054826, 1054821, 1054832, 1054823, 1054828, 1054829
+
+
+01037235 INFO  [20170503 14:17:41] - 61629 SofAncestorBo.getData: executing SELECT depreciationprofileversion0.depreciationprofileversion_id, depreciationprofileversion0.depreciationbasis_mcid, depreciationprofileversion0.depreciationbasis_mc, depreciationprofileversion0.depreciationbasis, depreciationprofileversion0.profiletype_enumid, depreciationprofileversion0.validfrom, depreciationprofileversion0.validto, depreciationprofileversion0.depreciationstartdate, depreciationprofileversion0.depreciationenddate, depreciationprofileversion0.residualvaluedate, depreciationprofileversion0.versionnumber, depreciationprofileversion0.depreciationmethod_enumid, depreciationprofileversion0.timestamp, depreciationprofileversion0.asset_id, depreciationprofileversion0.depreciationprofile_id
+	FROM depreciationprofileversion depreciationprofileversion0
+	WHERE depreciationprofileversion0.asset_id = ?
+	 AND depreciationprofileversion0.validfrom <= ?
+	 AND depreciationprofileversion0.validto > ?
+	 AND depreciationprofileversion0.validto <> ?
+01037235 INFO  [20170503 14:17:41] - 61631 SofAncestorBo.getData: with args 1000516, 2016-05-25 00:00:00, 2016-05-25 00:00:00, 1800-01-01 00:00:00
+
+
+
+01025798 INFO  [20170504 15:24:06] - 46227 SofAncestorBo.getData: executing SELECT count(1) FROM (SELECT DISTINCT costallocation0.costallocation_id AS AA0
+	FROM costallocation costallocation0, allocateddocument allocateddocument0
+	WHERE allocateddocument0.allocateddocument_id = costallocation0.allocateddocument_id
+	AND ( costallocation0.generalledgeraccount_id IN (?, ?)
+	 AND costallocation0.startcostperiod <= ?
+	 AND allocateddocument0.posted = ?
+	 AND  NOT allocateddocument0.journaltype_enumid IN (?, ?)
+	 AND allocateddocument0.postdate <= ?
+	 AND (costallocation0.endcostperiod >= ?
+	 OR allocateddocument0.postdate >= ?)
+	 AND costallocation0.Lcompany_id = ? )) tmptable4count
+01025798 INFO  [20170504 15:24:06] - 46228 SofAncestorBo.getData: with args 1000002, 1000001, 2018-05-31 00:00:00, 1, 1000006, 1000007, 2017-05-31 00:00:00, 2018-05-31 00:00:00, 2017-05-01 00:00:00, 1
+*/
+}
+function parseFunction() {
+    var sqlString = document.getElementById("textAreaSqlInput").value;
+    // break the string which starts with executing 
+	var sqlSelection = sqlString.substring(sqlString.indexOf("executing")+"executing".length);
+	// get the substring from args  onwards
+	var argsSql =sqlSelection.substring(sqlSelection.indexOf("args")+"args".length) ;
+	sqlSelection = sqlSelection.substring(0, sqlSelection.indexOf("INFO"));
+	sqlSelection = sqlSelection.trim().replace(/[0-9]+$/,'');
+
+	// split the args into array value
+	var arrayString = argsSql.split(",");
+	 var i =0;
+	 //replace all the ? with the args, which should always match
+	 while (sqlSelection.includes("?")){
+			sqlSelection = sqlSelection.replace("?", arrayString[i]);
+			i++;
+	 }
+	 // this is the final string till the INFO string
+	
+	//alert('finalString:::::'+sqlSelection);
+	var finalString = sqlSelection;
+	// find all the date string in the sql query
+    var matches = finalString.match(/[0-9]{4}[\/.-](?:1[0-2]|0[1-9])[\/.-](?:3[01]|[12][0-9]|0[1-9])[\t ]+(?:2[0-3]|[01][0-9])[:.][0-5][0-9][:.][0-5][0-9]/g);
+	
+	
+	var dateMap = new Object();// this variable will store the index as Key and value as the replacement string e.g {0,'2017-02-09 00:00:00'}{1,'2017-02-19 00:00:00'}
+	if(matches != null){	
+		// first we will create an intermediatry string , which will have actual dates replaced by the array index values
+			for(i=0;i<matches.length;i++){
+				//alert("match"+matches[i]);
+				finalString = finalString.replace(matches[i], "placeholder{"+i+"}");
+				if(document.getElementById("dbtype").value == "sqlserver"){
+					dateMap[i] = "'"+matches[i]+"'";
+				}else{
+					dateMap[i] = "to_date("+"'"+matches[i]+"'"+",'YYYY-MM-DD HH24:MI:SS')";
+				}
+			}
+	}
+
+
+	for(var key in dateMap){
+		finalString= finalString.replace("placeholder{"+key+"}",dateMap[key]);
+	}
+
+	//alert('finalString after fixing dates :::::'+finalString);
+	//alert('finalString after removing end garbage :::::'+finalString);
+	/*if(i > 1){
+		document.getElementById("textAreaSqlOutput").value = finalString.substring(0,finalString.length-9);
+	}else{
+		document.getElementById("textAreaSqlOutput").value = finalString;
+	}*/
+	
+	document.getElementById("textAreaSqlOutput").value = finalString;
+}
+</script>
+</head>
+
+<body onload="setTextAreaValue();">
+<form>
+</form>
+
+<p id="demo">Parse Sql Arguments</p>
+
+
+
+Database Type <select id = "dbtype">
+  <option value="sqlserver">SQL Server</option>
+  <option value="oracle">Oracle</option>
+</select>
+
+<br/> <br/>
+
+<textArea id="textAreaSqlInput" style = "width:500px;height:300px"></textArea>
+
+<textArea id="textAreaSqlOutput" style = "width:500px;height:300px" readonly="true"></textArea> <br/>
+
+<button type="button" onclick="parseFunction()">Convert</button>
+
+
+</body>
+</html> 
