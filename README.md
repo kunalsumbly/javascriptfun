@@ -1,5 +1,5 @@
 # javascriptfun
-This is a simple converter util in JS which formats Application SQL queries from ORACLE, SQL server to actual database queries removing unnecessary text and characters, to avoid manually editing stuff in SQL editor.
+This is a simple converter util in JS which formats MILES Application SQL queries from ORACLE, SQL server to actual database queries removing unnecessary text and characters, to avoid manually editing stuff in SQL editor.
 
 Please refer to the image file in the project. 
 
@@ -20,7 +20,3 @@ Sample , ugly Query from the logs which cannot be directly run in any SQL editor
 and hit convert button and boom the right text area will get populated and you can directly run that in your database client. Please use this and let me know if there are any issues , might come handy while debugging.
 
 So what are you waiting for, download  ParseSQL.html and give it a go.
-
- 
-
-NOTE:- Though , I have done some initial testing, there might be some corner cases which could give some tricky results. Its always good to do a cursory review for the SQL generated.
